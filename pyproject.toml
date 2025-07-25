@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mock-gen"
+version = "0.1.0"
+description = "A CLI tool for generating dummy data for testing and development."
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "click",
+    "faker"
+]
+
+[project.scripts]
+mock-gen = "mock_gen.cli:generate"
+
+[tool.setuptools]
+packages = ["mock_gen", "mock_gen.formats"]
+
+[tool.setuptools.package-data]
+"mock_gen" = ["../templates/*.json"] 

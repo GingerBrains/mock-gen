@@ -1,0 +1,7 @@
+{
+  "id": {"type": "integer", "min": 1, "max": 1000000},
+  "street": {"type": "address"},
+  "city": {"type": "name"},
+  "zip": {"type": "integer", "min": 10000, "max": 99999},
+  "country": {"type": "name"}
+} 

@@ -1,0 +1,3 @@
+Faker
+Click
+# Place your reusable schema templates in the templates/ directory for mock-gen 
